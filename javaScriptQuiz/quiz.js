@@ -10,5 +10,16 @@ function submitAnswers(){
 	var q4 = document.forms["quizForm"]["q4"].value;
 	var q5 = document.forms["quizForm"]["q5"].value;
 
-	alert(q1);
+	// Validation
+	
+
+	for (i = 1; i <= total; i++) {
+		if (eval('q'+i) == null || eval('q'+i) == "") {
+			alert('You missed question '+ i);
+			return false;
+		}
+	}
+
+	return false;
+
 }
