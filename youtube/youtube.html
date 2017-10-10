@@ -2,27 +2,27 @@
 <html>
 <head>
 	<title>Youtube Project</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="youtube.js"></script>
 	<link rel="stylesheet" type="text/css" href="youtube.css">
 
 </head>
 <body>
-  <div class="" id="container">
+  <div id="container">
     <header>
       <h1>Search<span>Vidz</span></h1>
       <p>Search all Youtube videos</p>
     </header>
     <section>
-      <form class="" id="search-form" action="index.html" method="post">
+      <form id="search-form" name="search-form" onsubmit="return search()">
         <div class="fieldcontainer">
-          <input type="search" id="query" class="search-field" placeholder="Search Youtube..." name="" value="">
+          <input type="search" id="query" class="search-field" placeholder="Search Youtube...">
           <input type="submit" name="search-btn" id="search-btn" value="">
         </div>
       </form>
 
       <ul id="results"></ul>
-      <div class="" id="buttons"></div>
+      <div id="buttons"></div>
     </section>
     <footer>
       <p>Copyrithg &copy; 2017, AllRights Reserved.</p>

@@ -7,7 +7,7 @@ body {
   font-family: "Segoue", sans-serif;
   line-height: 1.6em;
   color: #666;
-  background: #e1e1e1 url(../img/creampaper.png);
+  background: #e1e1e1 url(searchvidz/img/creampaper.png);
   font-size: 14px;
 }
 
@@ -61,7 +61,10 @@ footer {
   margin: 0 auto;
 }
 
-
+#search-btn:hover {
+  filter: alpha(opacity=90);
+  opacity: 0.9;
+}
 
 .search-field {
   box-sizing: border-box;
@@ -75,6 +78,7 @@ footer {
   font-size: 1.6em;
   border-bottom-color: #d2e2e7;
   border-radius: 1px;
+  box-shadow: inset 0 1px 2px rgba (0,0,0,0), 0 0 0 6px #f0f0f0;
   -moz-border-radius:1px;
   -webkit-border-radius:1px;
   border-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #f0f0f0;
@@ -86,18 +90,45 @@ footer {
   position:absolute;
   right: 360px;
   top: 5px;
-  height: 36px;
+  height: 32px;
   width: 32px;
   border:0;
   cursor: pointer;
   zoom: 1;
   filter: alpha(opacity=65);
   opacity: 0.65;
-  background: transparent url(img/search.png) top left no-repeat;
+  background: transparent url(searchvidz/img/search.png) top left no-repeat;
 
 }
 
 #search-btn:hover {
   filter:alpha(opacity=90);
   opacity: 0.9;
+}
+
+#results li {
+  padding: 10px 0;
+  border-bottom: 1px #ccc dotted;
+  list-style: none;
+  overflow: auto;
+}
+
+.list-left {
+  float: left;
+  width: 20%;
+}
+
+.list-left img {
+  width: 100%;
+  padding; 3px;
+  border: solid #ccc 1px;
+}
+
+.list-right {
+    float: right;
+    width: 78%;
+}
+
+.cTitle {
+  color: #dd2826;
 }
